@@ -1,5 +1,5 @@
 .delivery-section{
-  background: url(/img/bg/bg_delivery_0.jpg) no-repeat;
+  background: url(../img/bg/bg_delivery_0.jpg) no-repeat;
   background-size: 100% ;
   background-position: center top;
 
@@ -7,13 +7,13 @@
     position: relative;
 
     &:before{
-    content: url(/img/bg/bg_delivery_decore_2.png);
+    content: url(../img/bg/bg_delivery_decore_2.png);
     position: absolute;
     left: -6%;
     bottom: -3%;
   }
   &:after{
-    content: url(/img/bg/bg_delivery_decore_3.png);
+    content: url(../img/bg/bg_delivery_decore_3.png);
     position: absolute;
     right: -8%;
     bottom: -3%;

@@ -1,15 +1,15 @@
 .reviews-section{
-  background: url(/img/bg/bg_review_decore_1.png) right 20% top 7% no-repeat;
+  background: url(../img/bg/bg_review_decore_1.png) right 20% top 7% no-repeat;
   position: relative;
 
   &:before{
-    content: url(/img/bg/bg_review_decore_2.png);
+    content: url(../img/bg/bg_review_decore_2.png);
     position: absolute;
     left: .3%;
     bottom: -192px;
   }
   &:after{
-    content: url(/img/bg/bg_review_decore_3.png);
+    content: url(../img/bg/bg_review_decore_3.png);
     position: absolute;
     left: .3%;
     bottom: -120px;

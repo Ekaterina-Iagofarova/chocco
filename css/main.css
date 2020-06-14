@@ -1,27 +1,27 @@
 @import url(./layout/normalize.css);
 @font-face {
   font-family: 'Alegreya';
-  src: url("/fonts/alegreyasans-bold-webfont.woff2") format("woff2"), url("/fonts/alegreyasans-bold-webfont.woff") format("woff");
+  src: url("../fonts/alegreyasans-bold-webfont.woff2") format("woff2"), url("../fonts/alegreyasans-bold-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 @font-face {
   font-family: 'Alegreya';
-  src: url("/fonts/alegreyasans-extrabold-webfont.woff2") format("woff2"), url("/fonts/alegreyasans-extrabold-webfont.woff") format("woff");
+  src: url("../fonts/alegreyasans-extrabold-webfont.woff2") format("woff2"), url("../fonts/alegreyasans-extrabold-webfont.woff") format("woff");
   font-weight: 900;
   font-style: normal; }
 @font-face {
   font-family: 'Alegreya';
-  src: url("/fonts/alegreyasans-light-webfont.woff2") format("woff2"), url("/fonts/alegreyasans-light-webfont.woff") format("woff");
+  src: url("../fonts/alegreyasans-light-webfont.woff2") format("woff2"), url("../fonts/alegreyasans-light-webfont.woff") format("woff");
   font-weight: 300;
   font-style: normal; }
 @font-face {
   font-family: 'Alegreya';
-  src: url("/fonts/alegreyasans-medium-webfont.woff2") format("woff2"), url("/fonts/alegreyasans-medium-webfont.woff") format("woff");
+  src: url("../fonts/alegreyasans-medium-webfont.woff2") format("woff2"), url("../fonts/alegreyasans-medium-webfont.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
 @font-face {
   font-family: 'Alegreya';
-  src: url("/fonts/alegreyasans-regular-webfont.woff2") format("woff2"), url("/fonts/alegreyasans-regular-webfont.woff") format("woff");
+  src: url("../fonts/alegreyasans-regular-webfont.woff2") format("woff2"), url("../fonts/alegreyasans-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 html, body {
@@ -80,7 +80,7 @@ table {
   border-spacing: 0; }
 
 .head-section {
-  background: url(/img/bg/bg_hero_0.png) right bottom no-repeat;
+  background: url(../img/bg/bg_hero_0.png) right bottom no-repeat;
   background-color: #86c3d7;
   max-width: 100%;
   height: 100vh;
@@ -90,16 +90,16 @@ table {
   position: relative; }
   .head-section:before {
     position: absolute;
-    content: url(/img/bg/bg_hero_decore_lft.png);
+    content: url(../img/bg/bg_hero_decore_lft.png);
     left: 14.2%;
     bottom: -58px; }
   .head-section:after {
     position: absolute;
-    content: url(/img/bg/bg_hero_decore_rgt.png);
+    content: url(../img/bg/bg_hero_decore_rgt.png);
     right: 12.6%;
     bottom: -53px; }
   .head-section__container {
-    background: url(/img/bg/bg_hero_1.png) right bottom/50% auto no-repeat;
+    background: url(../img/bg/bg_hero_1.png) right bottom/50% auto no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -246,7 +246,7 @@ table {
       .advantages__item:last-child:after {
         display: none; }
     .advantages__item:after {
-      content: url(/img/bg/bg_why_decore.png);
+      content: url(../img/bg/bg_why_decore.png);
       position: absolute;
       top: 50px;
       right: 0;
@@ -278,10 +278,10 @@ table {
     margin-bottom: 16px; }
 
 .advantages-section {
-  background: url(/img/bg/bg_why_1.png) left top 50% no-repeat;
+  background: url(../img/bg/bg_why_1.png) left top 50% no-repeat;
   position: relative; }
   .advantages-section:after {
-    content: url(/img/bg/bg_why_decore_2.png);
+    content: url(../img/bg/bg_why_decore_2.png);
     position: absolute;
     left: 0;
     bottom: -120px; }
@@ -304,7 +304,7 @@ table {
     left: 50%;
     transform: translateX(-50%); }
   .reviews__block:after {
-    content: url(/img/bg/bg_review_1.png);
+    content: url(../img/bg/bg_review_1.png);
     position: absolute;
     top: 0;
     right: 0; }
@@ -340,15 +340,15 @@ table {
   justify-content: center; }
 
 .reviews-section {
-  background: url(/img/bg/bg_review_decore_1.png) right 20% top 7% no-repeat;
+  background: url(../img/bg/bg_review_decore_1.png) right 20% top 7% no-repeat;
   position: relative; }
   .reviews-section:before {
-    content: url(/img/bg/bg_review_decore_2.png);
+    content: url(../img/bg/bg_review_decore_2.png);
     position: absolute;
     left: .3%;
     bottom: -192px; }
   .reviews-section:after {
-    content: url(/img/bg/bg_review_decore_3.png);
+    content: url(../img/bg/bg_review_decore_3.png);
     position: absolute;
     left: .3%;
     bottom: -120px; }
@@ -376,18 +376,18 @@ table {
     object-fit: cover; }
 
 .delivery-section {
-  background: url(/img/bg/bg_delivery_0.jpg) no-repeat;
+  background: url(../img/bg/bg_delivery_0.jpg) no-repeat;
   background-size: 100%;
   background-position: center top; }
   .delivery-section__container {
     position: relative; }
     .delivery-section__container:before {
-      content: url(/img/bg/bg_delivery_decore_2.png);
+      content: url(../img/bg/bg_delivery_decore_2.png);
       position: absolute;
       left: -6%;
       bottom: -3%; }
     .delivery-section__container:after {
-      content: url(/img/bg/bg_delivery_decore_3.png);
+      content: url(../img/bg/bg_delivery_decore_3.png);
       position: absolute;
       right: -8%;
       bottom: -3%; }
@@ -438,7 +438,7 @@ table {
   .radio_checkbox .radio__visible {
     border-radius: 0; }
     .radio_checkbox .radio__visible:before {
-      background: url(/img/icons/checkbox.png) center center no-repeat; }
+      background: url(../img/icons/checkbox.png) center center no-repeat; }
   .radio__element {
     display: none; }
     .radio__element:checked ~ .radio__visible:before {
