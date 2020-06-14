@@ -1,0 +1,26 @@
+.hero{
+
+  &__content{
+    width: 46%;
+    margin-bottom: 68px;
+    line-height: 1.2;
+  }
+  &__title{
+    color: $color-white;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__description{
+    font-size: 21px;
+    padding-right: 10%;
+    margin-bottom: 30px;
+
+  }
+
+  &__icons{
+
+  }
+
+}

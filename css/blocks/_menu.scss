@@ -1,0 +1,21 @@
+.menu{
+
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  &__item{
+    margin-right: 27px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &__link{
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,26 @@
+.advantages{
+  display: flex;
+
+  &__item{
+    flex: 1;
+    padding: 0 3%;
+    position: relative;
+    &:first-child{
+      padding-left: 0;
+    }
+    &:last-child{
+      padding-right: 0;
+      &:after{
+        display: none;
+      }
+    }
+
+    &:after{
+      content: url(/img/bg/bg_why_decore.png);
+      position: absolute;
+      top: 50px;
+      right: 0;
+      transform: translateX(50%);
+    }
+  }
+}

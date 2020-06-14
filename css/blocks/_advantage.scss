@@ -1,0 +1,36 @@
+.advantage{
+  text-align: center;
+
+  &__img{
+    margin-bottom: 18px;
+  }
+  &__img-wrapper{
+    display: inline-block;
+    width: 124px;
+    height: 124px;
+    background-color: $color-bg-icon;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+  &__icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(1) brightness(.3);
+    width: 75px;
+    height: 69px;
+  }
+  &__content{
+
+  }
+  &__title{
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  &__description{
+
+  }
+}

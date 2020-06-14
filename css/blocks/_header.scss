@@ -1,0 +1,22 @@
+.header{
+  display: flex;
+  align-items: center;
+
+  &__link{
+
+  }
+
+  &__logo{
+    width: 53px;
+    height: 39px;
+  }
+
+  &__nav{
+    margin-left: 44px;
+  }
+
+  &__contacts{
+    display: flex;
+    margin-left: auto;
+  }
+}

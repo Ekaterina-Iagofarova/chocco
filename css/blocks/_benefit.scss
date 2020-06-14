@@ -1,0 +1,19 @@
+.benefit{
+  display: flex;
+
+  &__icon{
+    width: 44px;
+    margin-right: 8px;
+    filter: brightness(0) invert(1) opacity(.4); 
+  }
+
+  &__icon_cnt{
+    width: 50px;
+  }
+
+  &__text{
+    width: 84px;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
