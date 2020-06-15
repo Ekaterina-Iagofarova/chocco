@@ -6,6 +6,7 @@
   border-radius: 36px;
   line-height: 1;
   border: none;
+  outline: none;
 
   &_bg_white{
     background: $color-white;
@@ -31,6 +32,7 @@
     background: transparent;
     color: $color-title;
     text-transform: none;
+    font-weight: 500;
     &:hover{
       color: $color-green;
     }

@@ -6,9 +6,10 @@
   
   &__item{
     margin-bottom: 5px;
-
+    &:last-child{
+      margin-bottom: 0;
+    }
     &_active{
-
       .fixed-menu__link{
         border-color: $color-white;
       }
@@ -21,6 +22,10 @@
     border: 1px solid transparent;
     display: block;
     position: relative;
+
+    &:hover{
+      border-color: $color-white;
+    }
 
     &:before{
       content: "";

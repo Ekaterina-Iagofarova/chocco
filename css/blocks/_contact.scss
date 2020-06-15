@@ -4,18 +4,18 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    // &:before{
-    //   content: "";
-    //   display: inline-block;
-    //   background-image: url(/img/icons/phone.svg);
-    //   background-repeat: no-repeat;
-    //   background-size: contain;
-    //   filter: brightness(0) invert(1);
-    //   width: 12px;
-    //   height: 11px;
-    //   margin-right: 6px;
-    //   vertical-align: middle;
-    // }
+    &:before{
+      content: "";
+      display: inline-block;
+      background-image: url(/img/icons/phone.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      filter: brightness(0) invert(1);
+      width: 12px;
+      height: 11px;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
     &:hover{
       text-shadow: 0 0 10px rgba(0, 0, 0, .2);
     }

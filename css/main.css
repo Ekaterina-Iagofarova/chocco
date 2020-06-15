@@ -40,6 +40,11 @@ body {
   width: 100%;
   height: 100%; }
 
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
 .container {
   margin: 0 auto;
   width: 940px;
@@ -91,12 +96,12 @@ table {
   .head-section:before {
     position: absolute;
     content: url(../img/bg/bg_hero_decore_lft.png);
-    left: 14.2%;
+    left: 0;
     bottom: -58px; }
   .head-section:after {
     position: absolute;
     content: url(../img/bg/bg_hero_decore_rgt.png);
-    right: 12.6%;
+    right: 0;
     bottom: -53px; }
   .head-section__container {
     background: url(../img/bg/bg_hero_1.png) right bottom/50% auto no-repeat;
@@ -108,7 +113,7 @@ table {
 .header {
   display: flex;
   align-items: center; }
-  .header__logo {
+  .header__img {
     width: 53px;
     height: 39px; }
   .header__nav {
@@ -135,6 +140,17 @@ table {
     text-decoration: none;
     display: flex;
     align-items: center; }
+    .contact__phone:before {
+      content: "";
+      display: inline-block;
+      background-image: url(/img/icons/phone.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      filter: brightness(0) invert(1);
+      width: 12px;
+      height: 11px;
+      margin-right: 6px;
+      vertical-align: middle; }
     .contact__phone:hover {
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
   .contact__icon {
@@ -165,7 +181,8 @@ table {
   padding: 19px 35px 20px;
   border-radius: 36px;
   line-height: 1;
-  border: none; }
+  border: none;
+  outline: none; }
   .btn_bg_white {
     background: #ffffff;
     color: #365a49; }
@@ -181,12 +198,13 @@ table {
   .btn_bg_transparent {
     background: transparent;
     color: #000000;
-    text-transform: none; }
+    text-transform: none;
+    font-weight: 500; }
     .btn_bg_transparent:hover {
       color: #365a49; }
 
 .benefits {
-  display: flex; }
+  display: inline-flex; }
   .benefits__item {
     margin-right: 36px; }
     .benefits__item:last-child {
@@ -237,10 +255,8 @@ table {
   display: flex; }
   .advantages__item {
     flex: 1;
-    padding: 0 3%;
+    padding-right: 3%;
     position: relative; }
-    .advantages__item:first-child {
-      padding-left: 0; }
     .advantages__item:last-child {
       padding-right: 0; }
       .advantages__item:last-child:after {
@@ -314,10 +330,10 @@ table {
   width: 254px;
   height: 260px; }
 .reviews__avatar-img {
-  display: block;
   object-fit: cover;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 .reviews__content {
   flex: 1;
   margin-left: 20px;
@@ -329,9 +345,9 @@ table {
   margin-bottom: 18px; }
 .reviews__text {
   line-height: 1.25;
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 26px;
-  width: 80%; }
+  padding-right: 20%; }
 .reviews__author {
   font-weight: bold;
   color: #000000; }
@@ -362,15 +378,9 @@ table {
   position: relative; }
   .inter-avatar_active {
     border-color: #365a49; }
-  .inter-avatar__link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    display: block; }
+  .inter-avatar:hover {
+    border-color: #365a49; }
   .inter-avatar__img {
-    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover; }
@@ -403,6 +413,8 @@ table {
   .form__row {
     display: flex;
     margin-bottom: 12px; }
+    .form__row:last-child {
+      margin-bottom: 0; }
   .form__block {
     flex: 1;
     margin-right: 20px; }
@@ -413,10 +425,10 @@ table {
   .form__input {
     width: 100%;
     border: 3px solid transparent;
-    padding: 17px 11px; }
+    padding: 17px 11px;
+    outline: none; }
     .form__input:focus {
-      border-color: #dee2bd;
-      outline: none; }
+      border-color: #dee2bd; }
     .form__input_textarea {
       height: 180px;
       resize: none; }
@@ -470,6 +482,8 @@ table {
   z-index: 100; }
   .fixed-menu__item {
     margin-bottom: 5px; }
+    .fixed-menu__item:last-child {
+      margin-bottom: 0; }
     .fixed-menu__item_active .fixed-menu__link {
       border-color: #ffffff; }
   .fixed-menu__link {
@@ -479,6 +493,8 @@ table {
     border: 1px solid transparent;
     display: block;
     position: relative; }
+    .fixed-menu__link:hover {
+      border-color: #ffffff; }
     .fixed-menu__link:before {
       content: "";
       display: block;
