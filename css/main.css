@@ -148,6 +148,8 @@ table {
     @media screen and (max-width: 768px) {
       .header__contacts {
         display: none; } }
+  .header__burger {
+    position: fixed; }
 
 .menu {
   margin: 0 30px;
@@ -199,7 +201,7 @@ table {
   flex-direction: column;
   justify-content: space-between;
   display: none;
-  position: absolute;
+  position: fixed;
   top: 3%;
   right: 5%; }
   @media screen and (max-width: 768px) {
