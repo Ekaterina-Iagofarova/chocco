@@ -1,6 +1,7 @@
 .header{
   display: flex;
   align-items: flex-start;
+  position: relative;
 
   &__img{
     min-width: 53px;
@@ -19,10 +20,14 @@
       display: none;
     }
   }
-  &__burger{
-    margin-left: auto;
-    margin-right: rem(10px);
+
+  // &__burger{
+  //   position: ;
+  // }
+  // &__burger{
+  //   margin-left: auto;
+  //   margin-right: rem(10px);
     
     
-  }
+  // }
 }

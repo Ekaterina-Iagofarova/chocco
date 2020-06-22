@@ -12,6 +12,9 @@
     @include mobile{
       padding-right: 0;
       margin-bottom: rem(18px);
+      &:last-child{
+        margin-bottom: 0;
+      }
     }
 
     &:last-child{

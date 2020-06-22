@@ -135,7 +135,8 @@ table {
 
 .header {
   display: flex;
-  align-items: flex-start; }
+  align-items: flex-start;
+  position: relative; }
   .header__img {
     min-width: 53px;
     min-height: 39px; }
@@ -147,9 +148,6 @@ table {
     @media screen and (max-width: 768px) {
       .header__contacts {
         display: none; } }
-  .header__burger {
-    margin-left: auto;
-    margin-right: 0.625rem; }
 
 .menu {
   margin: 0 30px;
@@ -200,7 +198,10 @@ table {
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
-  display: none; }
+  display: none;
+  position: absolute;
+  top: 3%;
+  right: 5%; }
   @media screen and (max-width: 768px) {
     .burger-menu {
       display: inline-flex; } }
@@ -351,7 +352,9 @@ table {
     @media screen and (max-width: 480px) {
       .advantages__item {
         padding-right: 0;
-        margin-bottom: 1.125rem; } }
+        margin-bottom: 1.125rem; }
+        .advantages__item:last-child {
+          margin-bottom: 0; } }
     .advantages__item:last-child {
       padding-right: 0; }
       .advantages__item:last-child:after {
@@ -376,7 +379,8 @@ table {
     margin-bottom: 1.125rem; }
     @media screen and (max-width: 480px) {
       .advantage__img {
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        margin-right: 1rem; } }
   .advantage__img-wrapper {
     display: inline-block;
     width: 7.75rem;
@@ -385,9 +389,6 @@ table {
     border-radius: 50%;
     position: relative;
     overflow: hidden; }
-    @media screen and (max-width: 480px) {
-      .advantage__img-wrapper {
-        margin-right: 1rem; } }
   .advantage__icon {
     position: absolute;
     top: 50%;
@@ -477,6 +478,9 @@ table {
   margin-left: 1.25rem;
   padding: 0.375rem 0;
   font-size: 1.125rem; }
+  @media screen and (max-width: 480px) {
+    .reviews__content {
+      margin-left: 0; } }
 .reviews__title {
   font-size: 1.875rem;
   font-weight: bold;
@@ -528,7 +532,9 @@ table {
     .inter-avatar {
       width: 70px;
       height: 70px;
-      margin-right: 0.625rem; } }
+      margin-right: 0.625rem; }
+      .inter-avatar:last-child {
+        margin-right: 0; } }
   .inter-avatar_active {
     border-color: #365a49; }
   .inter-avatar:hover {

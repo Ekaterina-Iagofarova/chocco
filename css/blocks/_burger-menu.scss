@@ -5,7 +5,9 @@
   flex-direction: column;
   justify-content: space-between;
   display: none;
-
+  position: absolute;
+  top: 3%;
+  right: 5%;
 
   @include tablets{
     display: inline-flex;

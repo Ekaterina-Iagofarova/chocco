@@ -10,7 +10,11 @@
     width: 70px;
     height: 70px;
     margin-right: rem(10px);
+
+    &:last-child{
+      margin-right: 0;
     }
+  }
 
   &_active{
     border-color: $color-green;
