@@ -4,8 +4,12 @@
   right: 3%;
   z-index: $z-fixed-menu;
   
+  @include tablets{
+    display: none;
+  }
+  
   &__item{
-    margin-bottom: 5px;
+    margin-bottom: rem(5px);
     &:last-child{
       margin-bottom: 0;
     }

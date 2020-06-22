@@ -1,0 +1,16 @@
+.map-section{
+  background: url(../img/bg/tmp_map.jpg) center top / cover no-repeat;
+  position: relative;
+
+  // @include tablets {
+  //   background: url(../img/bg/tmp_map_tablets.jpg)  center top / cover no-repeat;
+  // }
+  &__footer{
+    background: #fff;
+    position: absolute;
+    height: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

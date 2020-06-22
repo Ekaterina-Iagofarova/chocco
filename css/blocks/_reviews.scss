@@ -2,20 +2,24 @@
 
   &__block{
     background: $color-bg-2;
-    padding: 50px 45px 34px;
-    margin-bottom: 22px;
+    padding: rem(50px) rem(45px) rem(34px);
+    margin-bottom: rem(22px);
     position: relative;
     overflow: hidden;
+
+    @include tablets{
+      padding: rem(58px) rem(6px) rem(34px);
+    }
 
     &:before{
       content: "";
       display: block;
-      width: 90px;
-      height: 90px;
+      width: rem(90px);
+      height: rem(90px);
       background-color: $color-white;
       border-radius: 50%;
       position: absolute;
-      top: -60px;
+      top: rem(-60px);
       left: 50%;
       transform: translateX(-50%);
     }
@@ -29,10 +33,22 @@
   }
   &__wrapper{
     display: flex;
+
+    @include tablets{
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
   }
   &__avatar{
     width: 254px;
     height: 260px;
+
+    @include tablets{
+    width: 130px;
+    height: 132px;
+    margin-bottom: rem(20px);
+    }
   }
   &__avatar-img{
     // display: block;
@@ -45,20 +61,27 @@
 
   &__content{
     flex: 1;
-    margin-left: 20px;
-    padding: 6px 0;
-    font-size: 18px;
+    margin-left: rem(20px);
+    padding: rem(6px) 0;
+    font-size: rem(18px);
   }
   &__title{
-    font-size: 30px;
+    font-size: rem(30px);
     font-weight: bold;
-    margin-bottom: 18px;
+    margin-bottom: rem(18px);
+    @include tablets{
+      margin-bottom: rem(16px);
+      }
   }
   &__text{
     line-height: 1.25;
     font-weight: 500;
-    margin-bottom: 26px;
+    margin-bottom: rem(26px);
     padding-right: 20%;
+    @include tablets{
+      margin-bottom: rem(18px);
+      padding-right: rem(20px) ;
+    }
   }
   &__author{
     font-weight: bold;

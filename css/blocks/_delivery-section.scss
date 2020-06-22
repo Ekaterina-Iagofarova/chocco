@@ -1,7 +1,9 @@
 .delivery-section{
-  background: url(../img/bg/bg_delivery_0.jpg) no-repeat;
-  background-size: 100% ;
-  background-position: center top;
+  background: url(../img/bg/bg_delivery_0.jpg) center top / cover no-repeat;
+
+  @include tablets{
+    background: url(../img/bg/bg_delivery_tablets.jpg) no-repeat;
+  }
 
   &__container{
     position: relative;
@@ -11,13 +13,21 @@
     position: absolute;
     left: -6%;
     bottom: -3%;
+
+    @include tablets{
+      display: none;
+    }
   }
   &:after{
     content: url(../img/bg/bg_delivery_decore_3.png);
     position: absolute;
     right: -8%;
     bottom: -3%;
-  }
+      @include tablets{
+        display: none;
+      }
+
+    }
   }
 
 }

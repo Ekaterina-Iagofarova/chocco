@@ -4,22 +4,31 @@
   background-color: $color-bg-1;
   max-width: 100%;
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(650px);
   color: $color-white;
-  padding: 24px 0 50px;
+  padding: rem(24px) 0 rem(50px);
   position: relative;
 
+  @include tablets{
+      background-position: right bottom 91%;
+  }
   &:before{
     position: absolute;
     content: url(../img/bg/bg_hero_decore_lft.png);
     left: 0;
-    bottom: -58px;
+    bottom: rem(-58px);
   }
   &:after{
     position: absolute;
     content: url(../img/bg/bg_hero_decore_rgt.png);
     right: 0;
-    bottom: -53px;
+    bottom: rem(-53px);
+  }
+
+  &:before, &:after{
+    @include tablets{
+      display: none;
+    }
   }
 
   &__container{
@@ -28,5 +37,16 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+
+    @include tablets{
+      background: none;
+    }
+  }
+
+  &__icons{
+    @include tablets{
+      display: none;
+    }
   }
 }
+

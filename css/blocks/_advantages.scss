@@ -1,14 +1,19 @@
 .advantages{
   display: flex;
 
+  @include mobile{
+    flex-direction: column;
+  }
   &__item{
     flex: 1;
     padding-right: 3%;
-    // padding: 0 3%;
     position: relative;
-    // &:first-child{
-    //   padding-left: 0;
-    // }
+    
+    @include mobile{
+      padding-right: 0;
+      margin-bottom: rem(18px);
+    }
+
     &:last-child{
       padding-right: 0;
       &:after{
@@ -19,9 +24,13 @@
     &:after{
       content: url(../img/bg/bg_why_decore.png);
       position: absolute;
-      top: 50px;
+      top: rem(50px);
       right: 0;
       transform: translateX(50%);
+
+      @include tablets{
+        display: none;
+      }
     }
   }
 }

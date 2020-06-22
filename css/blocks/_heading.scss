@@ -2,12 +2,18 @@
   text-align: center;
 
   &__title{
-    margin-bottom: 12px;
+    margin-bottom: rem(12px);
   }
   &__subtitle{
     padding: 0 26%;
-    font-size: 18px;
+    font-size: rem(18px);
     line-height: 1.2;
-    margin-bottom: 57px;
+    margin-bottom: rem(57px);
+    @include tablets{
+      padding: 0 20%;
+    }
+    @include mobile{
+      padding: 0;
+    }
   }
 }

@@ -1,6 +1,7 @@
 @import "./layout/normalize.css";
 @import "./layout/fonts";
 @import "./layout/variables";
+@import "./layout/media";
 @import "./layout/base";
 
 
@@ -8,6 +9,7 @@
 @import "./blocks/header";
 @import "./blocks/menu";
 @import "./blocks/contact";
+@import "./blocks/burger-menu";
 @import "./blocks/hero";
 @import "./blocks/btn";
 @import "./blocks/benefits";
@@ -24,6 +26,9 @@
 @import "./blocks/form";
 @import "./blocks/radio";
 @import "./blocks/fixed-menu";
+@import "./blocks/map-section";
+@import "./blocks/footer";
+@import "./blocks/social";
 
 
 

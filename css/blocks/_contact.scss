@@ -1,35 +1,31 @@
 .contact{
-  font-size: 24px;
+  font-size: rem(24px);
+
+  &__address{
+    color: inherit;
+    margin-bottom: 0;
+    @include mobile{
+      margin-bottom: rem(6px);    
+    }
+  }
   &__phone{
     text-decoration: none;
     display: flex;
     align-items: center;
-    &:before{
-      content: "";
-      display: inline-block;
-      background-image: url(/img/icons/phone.svg);
-      background-repeat: no-repeat;
-      background-size: contain;
-      filter: brightness(0) invert(1);
-      width: 12px;
-      height: 11px;
-      margin-right: 6px;
-      vertical-align: middle;
-    }
+
     &:hover{
       text-shadow: 0 0 10px rgba(0, 0, 0, .2);
     }
   }
-  &__phone-icon{
 
-  }
-  &__icon{
-    filter: brightness(0) invert(1);
-    width: 12px;
-    height: 11px;
-    margin-right: 6px;
-  }
+
   &__phone-number{
-
+    white-space: nowrap;
   }
+}
+.phone-icon{
+  width: 12px;
+  height: 11px;
+  margin-right: 6px;
+  fill: $color-white;
 }

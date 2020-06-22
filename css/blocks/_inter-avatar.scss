@@ -5,6 +5,13 @@
   overflow: hidden;
   border: 6px solid transparent;
   position: relative;
+
+  @include tablets{
+    width: 70px;
+    height: 70px;
+    margin-right: rem(10px);
+    }
+
   &_active{
     border-color: $color-green;
   }

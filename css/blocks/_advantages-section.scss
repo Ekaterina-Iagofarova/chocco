@@ -2,10 +2,21 @@
   background: url(../img/bg/bg_why_1.png) left top 50% no-repeat;
   position: relative;
 
+  @include tablets{
+    background-position: left top 14%;
+  }
+  @include mobile{
+    background: none;
+  }
+
   &:after{
     content: url(../img/bg/bg_why_decore_2.png);
     position: absolute;
     left: 0;
-    bottom: -120px;
+    bottom: rem(-120px);
+
+    @include tablets{
+      display: none;
+    }
   }
 }

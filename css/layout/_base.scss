@@ -1,3 +1,13 @@
+html{
+  font-size: $base-fz;
+
+  @include tablets{
+    font-size: $base-fz - 1px;
+  }
+  @include mobile{
+    font-size: $base-fz - 2px;
+  }
+}
 
 html, body {
   box-sizing: border-box;
@@ -6,7 +16,6 @@ html, body {
 
 body {
   font-family: "Alegreya", "Helvetica", "sans-serif";
-  font-size: 16px;
   font-weight: normal;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
@@ -20,12 +29,15 @@ body {
 .wrapper{
   width: 100%;
   height: 100%;
+  min-height: 100%;
   overflow-x: hidden;
 }
 
 .container{
   margin: 0 auto;
-  width: $width;
+  padding: 0 rem(24px);
+  width: 100%;
+  max-width: $width;
   position: relative;
 }
 *, *::after, *::before {

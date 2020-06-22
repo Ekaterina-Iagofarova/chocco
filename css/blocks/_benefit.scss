@@ -1,19 +1,22 @@
 .benefit{
   display: flex;
+  align-items: center;
 
   &__icon{
-    width: 44px;
-    margin-right: 8px;
-    filter: brightness(0) invert(1) opacity(.4); 
+    
+
+    .natural-icon, .delivery-icon, .figure-icon{
+      width: 44px;
+      fill: #c6f7ff;
+      margin-right: rem(8px);
+    }
+
   }
 
-  &__icon_cnt{
-    width: 50px;
-  }
 
   &__text{
-    width: 84px;
-    font-size: 16px;
+    width: rem(84px);
+    font-size: rem(16px);
     line-height: 1.2;
   }
 }
